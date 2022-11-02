@@ -7,7 +7,7 @@ Dim objweb
 ' WScript.echo "kkotari: pyenv-lib.vbs..!"
 Set objfs = CreateObject("Scripting.FileSystemObject")
 Set objws = WScript.CreateObject("WScript.Shell")
-Set objweb = CreateObject("WinHttp.WinHttpRequest.5.1")
+Set objweb = CreateObject("Microsoft.XMLHTTP")
 
 ' Set proxy settings, called on library import for objweb.
 Sub SetProxy()
